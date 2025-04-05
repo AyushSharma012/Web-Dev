@@ -20,7 +20,7 @@ function addToList() {
     }
 }
 
-function removeFromList() {
+function removeFromList(button) {
     button.parentElement.remove();
 }
 
