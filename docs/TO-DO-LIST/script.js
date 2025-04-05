@@ -13,7 +13,7 @@ function addToList() {
     let cells = document.querySelector(".tasks")
 
     if(feild.length != 0){
-        cells.innerHTML = '<div class = "cell"> <p>' + feild +'</p> <button onclick ="removeFromList()">del</button> </div> ' + cells.innerHTML;
+        cells.innerHTML = '<div class = "cell"> <p>' + feild +'</p> <button onclick ="removeFromList(this)">del</button> </div> ' + cells.innerHTML;
         document.getElementById("task").value = "";
     }else{
         alert("Insert the value first")
@@ -21,6 +21,6 @@ function addToList() {
 }
 
 function removeFromList() {
-    document.querySelector(".cell").remove();
+    button.parentElement.remove();
 }
 
