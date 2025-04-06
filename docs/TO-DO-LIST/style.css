@@ -68,7 +68,8 @@ header{
     border-radius: 7px;
     border: none;
     padding: 5px 30px 5px 30px ;
-    overflow-y: auto;
+    overflow-x: auto;
+    scrollbar-width: none;
     display: flex;
     align-items: center;
     justify-content: space-between ;
